@@ -20,7 +20,7 @@ set -e # this option is not set in the shebang because this script is executed b
 
 dwm_quit_restart=2
 
-for program in dwm picom setxkbmap ssh-agent unclutter xset; do
+for program in dunst dwm picom setxkbmap ssh-agent unclutter xset; do
 	[ -x "$(command -v -- "$program")" ] && continue
 	>&2 echo "The program \"${program}\" is required, but it was not found or it is not executable."
 	exit 1
@@ -36,6 +36,7 @@ setxkbmap -option caps:swapescape &
 xset r rate 300 50 &
 
 # -- Start programs -- #
+dunst &
 picom &
 unclutter &
 
