@@ -1,0 +1,21 @@
+[commit]
+	gpgsign = true
+
+[init]
+	defaultBranch = "main"
+
+[url "ssh://git@github.com"]
+	insteadOf = https://github.com
+	insteadOf = http://github.com
+	insteadOf = git://github.com
+
+[url "ssh://git@gitlab.com"]
+	insteadOf = https://gitlab.com
+	insteadOf = http://gitlab.com
+	insteadOf = git://gitlab.com
+
+[user]
+	# FIXME: Change these options for other users
+	name = "Plaunarome"
+	email = "plaunarome@protonmail.com"
+	signingkey = "23B01AF39E7CA694F16C62A3AB653462F9048509"
