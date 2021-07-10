@@ -23,6 +23,7 @@ Overview
 The following programs have been provided configuration files in this repository:
 
 * Git: version control system
+* makepkg: package building utility
 * MPD: music player daemon
 * startx: xinit wrapper
 * xinit: Xorg initializer
