@@ -22,6 +22,7 @@ Overview
 
 The following programs have been provided configuration files in this repository:
 
+* Dunst: notification daemon
 * Fontconfig: font configuration library
 * Git: version control system
 * makepkg: package building utility
