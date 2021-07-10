@@ -1,0 +1,58 @@
+[global]
+stack_duplicates = false
+
+browser = "xdg-open"
+dmenu = "dmenu"
+
+idle_threshold = 60
+show_age_threshold = 60
+
+# -- Appearance -- #
+corner_radius = 10
+geometry = "350x5-20+40"
+transparency = 10
+
+frame_width = 3
+separator_color = "frame"
+separator_height = 3
+
+horizontal_padding = 10
+padding = 10
+
+font = "monospace 10"
+format = "<b>%s</b>\n%b"
+line_height = 1
+word_wrap = true
+
+progress_bar_height = 12
+progress_bar_max_width = 350
+
+# --- Icons --- #
+icon_path = "/usr/share/icons/Adwaita/32x32/legacy:/usr/share/icons/Adwaita/32x32/mimetypes"
+icon_position = "left"
+
+min_icon_size = 32
+max_icon_size = 32
+
+[shortcuts]
+# FIXME: Deprecated, use dunstctl(1) instead
+close = "mod4+n"
+close_all = "mod4+shift+n"
+context = "mod4+mod1+n"
+history = "mod4+ctrl+n"
+
+# -- Notification types -- #
+[urgency_low]
+timeout = 10
+
+[urgency_normal]
+timeout = 10
+
+[urgency_critical]
+timeout = 0
+
+[calcurse]
+appname = "calcurse"
+timeout = 0
+
+# vim: set filetype=cfg:
