@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# Copyright (C) 2021  Plaunarome
+# This file is part of Plaunadots.
+#
+# Plaunadots is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Plaunadots is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Plaunadots.  If not, see <https://www.gnu.org/licenses/>.
+
+set -e # this option is not set in the shebang because this script is executed by running `/bin/sh /path/to/xinitrc`
+
+dwm_quit_restart=2
+
+for program in dwm setxkbmap ssh-agent unclutter xset; do
+	[ -x "$(command -v -- "$program")" ] && continue
+	>&2 echo "The program \"${program}\" is required, but it was not found or it is not executable."
+	exit 1
+done
+
+# -- Source system scripts -- #
+[ -d /etc/X11/xinit/xinitrc.d ] && for script in /etc/X11/xinit/xinitrc.d/?*.sh; do
+	[ -x "$script" ] && . "$script"
+done
+
+# -- Keyboard configuration -- #
+setxkbmap -option caps:swapescape &
+xset r rate 300 50 &
+
+# -- Start programs -- #
+unclutter &
+
+while :; do
+	ssh-agent dwm || { [ "$?" = "$dwm_quit_restart" ] && continue; }
+	break
+done
