@@ -23,6 +23,7 @@ Overview
 The following programs have been provided configuration files in this repository:
 
 * Git: version control system
+* Zsh: shell
 
 ### suckless software
 
@@ -37,7 +38,8 @@ The following forks of [suckless](https://suckless.org) software are being used:
 
 The following workarounds are being used to force programs to keep their files in the XDG directories:
 
-*Coming soon...* <!-- FIXME: Add list -->
+* pass: `$PASSWORD_STORE_DIR` is set
+* Zsh: `$ZDOTDIR` is set
 
 Installation
 ---
