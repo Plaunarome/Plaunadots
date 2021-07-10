@@ -27,6 +27,7 @@ The following programs have been provided configuration files in this repository
 * makepkg: package building utility
 * MPD: music player daemon
 * Paru: AUR helper
+* picom: compositor
 * startx: xinit wrapper
 * xdg-user-dirs: user directory manager
 * xinit: Xorg initializer
