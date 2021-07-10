@@ -28,6 +28,7 @@ The following programs have been provided configuration files in this repository
 * MPD: music player daemon
 * Paru: AUR helper
 * startx: xinit wrapper
+* xdg-user-dirs: user directory manager
 * xinit: Xorg initializer
 * Zsh: shell
 
