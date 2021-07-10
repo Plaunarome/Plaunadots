@@ -25,6 +25,7 @@ The following programs have been provided configuration files in this repository
 * Git: version control system
 * makepkg: package building utility
 * MPD: music player daemon
+* Paru: AUR helper
 * startx: xinit wrapper
 * xinit: Xorg initializer
 * Zsh: shell
