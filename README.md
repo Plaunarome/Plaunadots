@@ -22,7 +22,7 @@ Overview
 
 The following programs have been provided configuration files in this repository:
 
-*Coming soon...* <!-- FIXME: Add list -->
+* Git: version control system
 
 ### suckless software
 
