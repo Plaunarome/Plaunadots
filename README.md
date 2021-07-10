@@ -23,6 +23,8 @@ Overview
 The following programs have been provided configuration files in this repository:
 
 * Git: version control system
+* startx: xinit wrapper
+* xinit: Xorg initializer
 * Zsh: shell
 
 ### suckless software
@@ -39,6 +41,8 @@ The following forks of [suckless](https://suckless.org) software are being used:
 The following workarounds are being used to force programs to keep their files in the XDG directories:
 
 * pass: `$PASSWORD_STORE_DIR` is set
+* startx: use `startx "$XINITRC"` instead
+* xinit: `$XINITRC` is set
 * Zsh: `$ZDOTDIR` is set
 
 Installation
