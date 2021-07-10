@@ -22,6 +22,7 @@ Overview
 
 The following programs have been provided configuration files in this repository:
 
+* calcurse: calendar and to-do list
 * Dunst: notification daemon
 * ECWolf: advanced source port for Wolfenstein 3D engine games
 * Fontconfig: font configuration library
