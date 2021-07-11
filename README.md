@@ -35,6 +35,7 @@ The following programs have been provided configuration files in this repository
 * startx: xinit wrapper
 * xdg-user-dirs: user directory manager
 * xinit: Xorg initializer
+* zathura: document viewer
 * Zsh: shell
 
 ### suckless software
