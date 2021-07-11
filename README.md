@@ -34,6 +34,7 @@ The following programs have been provided configuration files in this repository
 * picom: compositor
 * startx: xinit wrapper
 * xdg-user-dirs: user directory manager
+* xdg-utils: desktop integration utilities
 * xinit: Xorg initializer
 * zathura: document viewer
 * Zsh: shell
