@@ -1,0 +1,21 @@
+set database "null"
+set dbus-service false
+set filemonitor "noop"
+set sandbox "strict"
+set selection-clipboard "clipboard"
+set synctex false
+
+map I recolor
+map [fullscreen] I recolor
+
+# -- Appearance -- #
+set font "monospace 10"
+set guioptions "hsv"
+
+set recolor true
+set recolor-keephue true
+
+set statusbar-h-padding 8
+set statusbar-v-padding 8
+
+# vim: set filetype=conf:
