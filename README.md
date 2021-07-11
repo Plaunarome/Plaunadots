@@ -27,6 +27,7 @@ The following programs have been provided configuration files in this repository
 * ECWolf: advanced source port for Wolfenstein 3D engine games
 * Fontconfig: font configuration library
 * Git: version control system
+* GTK 2/3: GUI toolkit
 * makepkg: package building utility
 * MPD: music player daemon
 * Paru: AUR helper
@@ -49,6 +50,7 @@ The following forks of [suckless](https://suckless.org) software are being used:
 
 The following workarounds are being used to force programs to keep their files in the XDG directories:
 
+* GTK 2: `$GTK2_RC_FILES` is set and imported into the systemd user environment
 * MPD: `$MPD_HOST` is set and other files are stored in `${XDG_DATA_HOME}/mpd`
 * pass: `$PASSWORD_STORE_DIR` is set
 * startx: use `startx "$XINITRC"` instead
